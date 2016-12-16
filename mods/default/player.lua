@@ -14,6 +14,19 @@ function default.player_register_model(name, def)
 	models[name] = def
 end
 
+-- Notes on player materials:
+
+-- The first material sets the 64x32 texture, in this case;
+-- "ptextures_transparent.png"
+-- While the other material is a 64x64 texture;
+-- "player_singleplayer.png"
+-- There is example code in player_textures for
+-- automatically detecting whether the custom skin is
+-- the old 64x32 format or the new 64x64 format.
+
+-- In future, a third material will allow users to apply
+-- a thinner armed model with 3 pixel wide arms.
+
 -- Default player appearance
 default.player_register_model("character.x", {
 	animation_speed = 30,
